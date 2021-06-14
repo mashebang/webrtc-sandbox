@@ -1,0 +1,26 @@
+@keyframes skew {
+    from {
+        transform: skew(0deg)
+    }
+
+    to {
+        transform: skew(180deg);
+    }
+}
+
+#video-container {
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+}
+
+#oscilloscope {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+}
+
+video {
+    width: 100%;
+}

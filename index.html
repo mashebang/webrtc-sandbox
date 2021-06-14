@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/events.js"></script>
+        <script type="text/javascript" src="js/audioAnalyser.js"></script>
+        <script type="text/javascript" src="js/datgui.js"></script>
+        <script type="text/javascript" src="cdn.temasys.io/adapterjs/0.15.x/adapter.min.js"></script>
+        <link href="index.css" rel="stylesheet" />
+    </head>
+    <div id="video-container" style="display: flex; justify-content: center;">
+        <canvas id="oscilloscope"></canvas>
+        <p style="position: absolute; bottom: 0; color: white;">sound analyser</p>
+        <video id="video" autoplay />
+    </div>
+    <div style="
+        max-width: 500px;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        margin: 0 auto;
+        align-items: center;
+    ">
+        <fieldset>
+            <label for="video-devices">Video input</label>
+            <select onchange="changeInput(this)" id="video-devices"></select>
+        </fieldset>
+        <fieldset>
+            <label for="audio-input-devices">Audio input</label>
+            <select onchange="changeInput(this)" id="audio-output-devices"></select>
+        </fieldset>
+        <fieldset>
+            <label for="audio-output-devices">Audio output</label>
+            <select onchange="changeInput(this)" id="audio-input-devices"></select>
+        </fieldset>
+    </div>
+
+</html>
